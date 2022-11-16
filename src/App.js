@@ -5,15 +5,20 @@ import {v4 as uuidv4} from "uuid";
 import FoodBox from './components/Foodbox';
 import AddFoodForm from './components/AddFoodForm';
 import Search from './components/Search';
+import Toggle from './components/Toggle';
 
 function App() {
   const [foods, setFoods] = useState(foodsJSON)
   const [query, setQuery] = useState("");
+ 
+  
   return (
     <div className="App">
+      <Toggle>
       <div className="AddFoodForm">
      <AddFoodForm foods={foods} setFoods={setFoods}/> 
      </div>
+   </Toggle>
      <div className='Search'>
      <Search query={query} setQuery={setQuery}/>
      </div>
