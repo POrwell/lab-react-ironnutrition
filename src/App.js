@@ -9,17 +9,11 @@ function App() {
   return (
     <div className="App">
       <h1>Food List</h1>
+      <div className="Foodbox">
     {foods.map((food) => 
-      <div key={uuidv4()}>
-  <p>{food.name}</p>
-  <img src={food.image} width={50} />
-</div> )}
-<FoodBox food={ {
-  name: "Orange",
-  calories: 85,
-  image: "https://i.imgur.com/abKGOcv.jpg",
-  servings: 1
-}} />
+    <FoodBox key={uuidv4()} food={food} />
+)}
+</div>
 </div>
   );
 }
