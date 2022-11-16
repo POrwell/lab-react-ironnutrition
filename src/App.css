@@ -5,4 +5,13 @@
 .Foodbox {
   display: flex;
   flex-wrap: wrap;
+justify-content: center;
+width: 60vw;
+margin: auto;
+}
+
+.AddFoodForm {
+  width: 20vw;
+  margin: auto;
+  padding-bottom: 40px
 }

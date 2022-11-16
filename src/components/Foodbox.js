@@ -3,7 +3,8 @@ import { Card, Col, Button } from 'antd';
 // Iteration 2
 function FoodBox({food}) {
   return (
-    <Col>
+
+   <Col>
       <Card
         title={food.name}
         style={{ width: 230, height: 300, margin: 10 }}
@@ -17,6 +18,8 @@ function FoodBox({food}) {
         <Button type="primary"> Delete </Button>
       </Card>
     </Col>
+
+
   );
 }
 
