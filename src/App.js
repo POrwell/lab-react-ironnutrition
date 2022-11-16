@@ -20,7 +20,7 @@ function App() {
      <h2>Food List</h2>
       <div className="Foodbox">
     {foods.filter((food) => food.name.toLowerCase().includes(query.toLowerCase())).map((food) => 
-    <FoodBox key={uuidv4()} food={food} />
+    <FoodBox key={uuidv4()} food={food} foods={foods} setFoods={setFoods}/>
 )}
 </div>
 </div>
